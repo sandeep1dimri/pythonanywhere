@@ -1,0 +1,171 @@
+html {
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --primary-color:#22254b;
+    --secondary-color:#373b69;
+}
+
+* {
+    box-sizing: boder-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    /*display:flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content:center;
+    /*height: 100vh; */
+    overflow: auto;
+    margin:0;
+    margin: 2%;
+    background-color: var(--primary-color);
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    color: white;
+}
+
+.number{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.number::placeholder {
+    color: #7378c5;
+}
+
+.number:focus{
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 1rem;
+
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.contain img {
+    width: 100%;
+}
+
+.info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem 1rem;
+   
+    /*transform: translateY(150%); */
+
+}
+h3{
+    word-wrap: break-word;
+    
+}
+
+img{
+    width: 10%;
+    height: 10%;
+}
+
+
+.card-front img {
+    width: 100%;
+}
+
+.top-right {
+    position: absolute;
+    top: .5rem;
+    right: 15px;
+    color: white;
+    border-radius: 50%;
+    /*border: solid blue 1px; */
+    background-color: var(--primary-color);
+    font-size: 1em;
+    padding: .5em;
+    /*animation: blinking 2s ease-in 5;*/
+    
+    
+  }
+  
+  @keyframes blinking {
+    50% { fill: red; opacity: 0; }
+  }
+
+  .top-right-blink {
+    position: absolute;
+    top: .5rem;
+    right: 15px;
+    color: white;
+    border-radius: 50%;
+    /*border: solid blue 1px; */
+    background-color: green;
+    font-size: 1em;
+    padding: .5em;
+    animation: blinking 1s ease-in 5;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .card-front{
+    background-color: transparent;
+    color: black;
+  }
+
+  .card-front-hidden{
+    display: None;
+  }
+
+  .card-back{
+
+    color: white;
+    text-align: center;
+    display: None; /* display:block */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /*visibility: hidden; */ 
+    overflow: hidden;
+
+    
+  }
+
+  .card-back-visible{
+    color: white;
+    text-align: center;
+    display: block; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+
+  }
+ 
