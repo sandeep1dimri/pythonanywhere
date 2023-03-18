@@ -1,5 +1,5 @@
-API_URL="http://127.0.0.1:5000/thisorthat?q=test@gmail.com"
-//API_URL="http://sandeep1dimri.pythonanywhere.com/thisorthat?q=test@gmail.com"
+//API_URL="http://127.0.0.1:5000/thisorthat?q=test@gmail.com"
+API_URL="http://sandeep1dimri.pythonanywhere.com/thisorthat?q=test@gmail.com"
 
 async function getChoices(url){
 
